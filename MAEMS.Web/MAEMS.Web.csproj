@@ -194,6 +194,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\EventDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +283,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MAEMS.Core\MAEMS.Core.csproj">
+      <Project>{c7f2fc50-aa4d-4eb4-bde5-e0babb87a854}</Project>
+      <Name>MAEMS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MAEMS.Data\MAEMS.Data.csproj">
+      <Project>{c678fcec-5b48-40ae-8c68-5fda6fbfb189}</Project>
+      <Name>MAEMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MAEMS.Services\MAEMS.Services.csproj">
+      <Project>{089d26ed-03bc-4b74-a079-8b2697d86529}</Project>
+      <Name>MAEMS.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

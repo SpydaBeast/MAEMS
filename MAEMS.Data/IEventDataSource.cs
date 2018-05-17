@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MAEMS.Data
 {
-    public class Class1
+    public interface IEventDataSource
     {
+        IQueryable<Event> Events { get; set; }
     }
 }
