@@ -195,6 +195,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\EventDb.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -236,7 +237,9 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -285,10 +288,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MAEMS.Core\MAEMS.Core.csproj">
-      <Project>{c7f2fc50-aa4d-4eb4-bde5-e0babb87a854}</Project>
-      <Name>MAEMS.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MAEMS.Data\MAEMS.Data.csproj">
       <Project>{c678fcec-5b48-40ae-8c68-5fda6fbfb189}</Project>
       <Name>MAEMS.Data</Name>

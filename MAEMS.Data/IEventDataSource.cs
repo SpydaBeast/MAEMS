@@ -8,6 +8,6 @@ namespace MAEMS.Data
 {
     public interface IEventDataSource
     {
-        IQueryable<Event> Events { get; set; }
+        IQueryable<Event> Events { get; }
     }
 }

@@ -9,7 +9,11 @@ namespace MAEMS.Web.Infrastructure
 {
     public class EventDb : DbContext, IEventDataSource
     {
+        public EventDb(): base("MAEMS.Web")
+        {
+
+        }
         public DbSet<Event> Events { get; set; }
-        IQueryable<Event> IEventDataSource.Events { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        IQueryable<Event> IEventDataSource.Events => Events;
     }
 }
