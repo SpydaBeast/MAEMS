@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MAEMS.Data
 {
-    public interface IEventDataSource
+    public class Staff
     {
-        IQueryable<Event> Events { get; }
-        IQueryable<Staff> Staffs { get; }
+        public virtual int Id { get; set; }
+        public virtual string Name{ get; set; }
     }
+
 }

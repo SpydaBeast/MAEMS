@@ -14,6 +14,10 @@ namespace MAEMS.Web.Infrastructure
 
         }
         public DbSet<Event> Events { get; set; }
+        public DbSet<Staff> Staffs { get; set; }
+
+        IQueryable<Staff> IEventDataSource.Staffs => Staffs;
+
         IQueryable<Event> IEventDataSource.Events => Events;
     }
 }

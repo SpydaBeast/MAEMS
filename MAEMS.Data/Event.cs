@@ -8,13 +8,13 @@ namespace MAEMS.Data
 {
     public class Event
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Date { get; set; }
-        public decimal Registration { get; set; }
-        public string Location { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string Counrty { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Date { get; set; }
+        public virtual decimal Registration { get; set; }
+        public virtual string Location { get; set; }
+        public virtual string Street { get; set; }
+        public virtual string City { get; set; }
+        public virtual string Counrty { get; set; }
     }
 }

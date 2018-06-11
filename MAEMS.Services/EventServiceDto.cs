@@ -7,7 +7,7 @@ using MAEMS.Data;
 
 namespace MAEMS.Services
 {
-    public class EventsService
+    public class EventServiceDto
     {
 
     }
